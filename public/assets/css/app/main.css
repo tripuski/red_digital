@@ -1,0 +1,67 @@
+/* ---------------------------------------------------
+    Button styles
+----------------------------------------------------- */
+
+.btn-autodicol {
+    background-color: rgb(167, 30, 34) !important;
+    color: white !important;
+    border-color: rgb(130, 21, 24) !important;
+}
+
+.btn-autodicol:hover {
+    background-color: rgb(167, 30, 34) !important;
+    color: white !important;
+    border-color: rgb(130, 21, 24) !important;
+}
+
+.btn-autodicol:focus {
+    background-color: rgb(167, 30, 34) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: rgb(130, 21, 24) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(130, 21, 24) !important;
+}
+
+.btn-outline-autodicol {
+    /* color: #47596e !important; */
+    border-color: rgb(130, 21, 24) !important;
+}
+
+.btn-outline-autodicol:hover {
+    background-color: rgb(167, 30, 34) !important;
+    color: white !important;
+}
+
+.btn-outline-autodicol:focus {
+    background-color: rgb(167, 30, 34) !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: rgb(130, 21, 24) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(130, 21, 24) !important;
+}
+
+/* ---------------------------------------------------
+    input, select  styles
+----------------------------------------------------- */
+
+input:focus {
+    border-color: rgb(130, 21, 24) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(167, 30, 34) !important;
+}
+
+select.form-select:focus {
+    border-color: rgb(130, 21, 24) !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(167, 30, 34) !important;
+}
+
+/* ---------------------------------------------------
+    Custom styles
+----------------------------------------------------- */
+
+table.dataTable td {
+    max-width: 200px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
