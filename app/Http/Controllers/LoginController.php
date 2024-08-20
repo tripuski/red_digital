@@ -29,9 +29,9 @@ class LoginController extends Controller
         }
 
         if (Auth::attempt($credentials)) {
-            return redirect()->to('admin/home')->with('message', 'Bienvenido');
+            return redirect()->to('admin/dashboard')->with('message', 'Bienvenido');
         } else {
-            return redirect()->to('/')->with('message', 'Las credenciales de ingreso son incorrectas.');
+            return redirect()->to('login')->with('message', 'Las credenciales de ingreso son incorrectas.');
         }
     }
 
@@ -46,7 +46,7 @@ class LoginController extends Controller
         $user = User::create($request->all());
         
         if ($user) {
-            return redirect()->to('admin/home')->with('message', 'Bienvenido'); 
+            return redirect()->to('admin/dashboard')->with('message', 'Bienvenido'); 
         }
         // $user->permissions()->sync($request->permissions);
         // return redirect()->route('admin.users.index')->with('message', 'Usuario creado exitosamente');

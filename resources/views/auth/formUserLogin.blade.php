@@ -70,7 +70,8 @@
                                                 <div
                                                     class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-center mt-5">
                                                     <a
-                                                        href="{{ route('login') }}"class="link-secondary text-decoration-none">Regresar</a>
+                                                        href="{{ route('login') }}"class="link-secondary text-decoration-none">Iniciar
+                                                        sesión</a>
                                                 </div>
                                             </div>
                                         </div>

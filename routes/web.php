@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Route;
 
-// Ruta pública de inicio
-Route::get('/', function () {
-    return view('welcome');
-});
+//home
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
 
 // Ruta de inicio de sesión
 Route::get('login', [LoginController::class, 'index'])->name('login');
@@ -22,5 +21,5 @@ Route::post('login/formUserRegister', [LoginController::class, 'formUserRegister
 
 // Grupo de rutas protegidas por autenticación con prefijo y alias
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function () {
-    Route::get('home', [HomeController::class, 'index'])->name('home');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });

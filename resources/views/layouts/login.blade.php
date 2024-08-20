@@ -10,7 +10,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Autodicol Management</title>
+    <title>Pacni</title>
     <link href="{{ asset('assets/css/lib/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Fonts -->

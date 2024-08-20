@@ -69,9 +69,8 @@
                 </div>
             </div>
         </div>
-
         <!-- Custom template | don't include it in your project! -->
-        {{-- @include('components.main.change_theme') --}}
+        @include('components.main.change_theme')
         <!-- End Custom template -->
     </div>
     <!--   Core JS Files   -->
